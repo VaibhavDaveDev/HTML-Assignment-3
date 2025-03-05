@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3 HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <div class="form-container">
+            <div class="left-column">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first_name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="qualification">Qualification</label>
+                    <select id="qualification" name="qualification">
+                        <option value="">--Select--</option>
+                        <option value="high_school">High School</option>
+                        <option value="bachelors">Bachelor's</option>
+                        <option value="masters">Master's</option>
+                        <option value="phd">PhD</option>
+                    </select>
+                </div>
+                <div class="form-group checkbox-group">
+                    <span class="label">Coding Languages</span>
+                    <div class="options">
+                        <label><input type="checkbox" name="coding_languages[]" value="c_cpp"> C/C++</label>
+                        <label><input type="checkbox" name="coding_languages[]" value="java"> Java</label>
+                        <label><input type="checkbox" name="coding_languages[]" value="csharp"> C#</label>
+                        <label><input type="checkbox" name="coding_languages[]" value="php"> PHP</label>
+                        <label><input type="checkbox" name="coding_languages[]" value="python"> Python</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last_name">
+                </div>
+                <div class="form-group">
+                    <label for="contact-number">Contact Number</label>
+                    <input type="tel" id="contact-number" name="contact_number">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="form-group radio-group">
+                    <span class="label">Gender</span>
+                    <div class="options">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience</label>
+                    <select id="experience" name="experience">
+                        <option value="">-Select-</option>
+                        <option value="less_than_1">Less than 1 year</option>
+                        <option value="1_to_3">1-3 years</option>
+                        <option value="3_to_5">3-5 years</option>
+                        <option value="more_than_5">More than 5 years</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="submit-container">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
